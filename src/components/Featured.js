@@ -101,22 +101,22 @@ const Featured = () => {
                     </div>
                     <div className='card'>
                         <div className='top'>
-                            <img src={data[7].image} alt='' />
+                            <img src={data[9].image} alt='' />
                         </div>
                         <div>
-                            <h5>{data[7].name}</h5>
-                            <p>${data[7].current_price.toLocaleString()}</p>
+                            <h5>{data[9].name}</h5>
+                            <p>${data[9].current_price.toLocaleString()}</p>
                         </div>
 
-                        {data[7].price_change_percentage_24h < 0 ? (
+                        {data[8].price_change_percentage_24h < 0 ? (
                             <span className='red'>
                                 <FiArrowDown className='icon' />
-                                {data[7].price_change_percentage_24h.toFixed(2)}%
+                                {data[9].price_change_percentage_24h.toFixed(2)}%
                             </span>
                         ) : (
                                 <span className='green'>
                                     <FiArrowUpRight className='icon' />
-                                    {data[7].price_change_percentage_24h.toFixed(2)}%
+                                    {data[9].price_change_percentage_24h.toFixed(2)}%
                                 </span>
                             )}
                     </div>
