@@ -22,7 +22,7 @@ const Hero = () => {
                 </div>
             </div>
 
-            {/* Left Side */}
+            {/* Right Side */}
             <div className='right'>
                 <div className='img-container'>
                     <img src={Crypto} alt=''/>
